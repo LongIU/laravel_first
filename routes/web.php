@@ -12,8 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('frontend.index');
+})->name('home');
 
 Route::get('users/{name?}', function ($name = "chase")
 {
@@ -26,9 +26,14 @@ Route::prefix('admin')->group(function ()
     {
         return 'welcome';
     });
-    Route::get('long/{id?}', function ($id = 'tokisaki')
+    Route::get('long', function ()
     {
-        return $id;
+        return view( 'tokisaki.welcome', ['name' => 'LONG']);
     });
 });
 
+
+Route::get('test', function()
+{
+    return view('tokisaki.long', ['name' => 'Kurumi' , 'number' => '520']);
+});
