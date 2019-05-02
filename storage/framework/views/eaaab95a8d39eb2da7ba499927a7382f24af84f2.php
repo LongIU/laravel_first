@@ -1,4 +1,6 @@
-<?php $__env->startSection('title', 'Home'); ?>
+<?php $__env->startSection('title', 'Products'); ?>
+
+<?php $__env->startSection('nav_products', 'active'); ?>
 
 <?php $__env->startSection('content'); ?>
 

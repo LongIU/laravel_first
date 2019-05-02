@@ -1,8 +1,10 @@
-<?php $__env->startSection('title', 'About'); ?>
+@extends('frontend.layouts.master')
 
-<?php $__env->startSection('nav_about', 'active'); ?>
+@section('title', 'About')
 
-<?php $__env->startSection('content'); ?>
+@section('nav_about', 'active')
+
+@section('content')
 
   <section class="page-section about-heading">
     <div class="container">
@@ -24,5 +26,4 @@
     </div>
   </section>
 
-<?php $__env->stopSection(); ?>
-<?php echo $__env->make('frontend.layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/long/Long_message_board/resources/views/frontend/about.blade.php ENDPATH**/ ?>
+@endsection

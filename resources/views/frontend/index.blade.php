@@ -1,8 +1,10 @@
-<?php $__env->startSection('title', 'Home'); ?>
+@extends('frontend.layouts.master')
 
-<?php $__env->startSection('nav_home', 'active'); ?>
+@section('title', 'Home')
 
-<?php $__env->startSection('content'); ?>
+@section('nav_home', 'active')
+
+@section('content')
 
   <section class="page-section clearfix">
     <div class="container">
@@ -39,6 +41,4 @@
     </div>
   </section>
 
-<?php $__env->stopSection(); ?>
-
-<?php echo $__env->make('frontend.layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/long/Long_message_board/resources/views/frontend/index.blade.php ENDPATH**/ ?>
+@endsection

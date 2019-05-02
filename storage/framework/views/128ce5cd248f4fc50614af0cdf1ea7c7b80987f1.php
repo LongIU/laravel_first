@@ -1,4 +1,3 @@
-
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
@@ -8,18 +7,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item active px-lg-4">
+                <li class="nav-item <?php echo $__env->yieldContent('nav_home'); ?> px-lg-4">
                     <a class="nav-link text-uppercase text-expanded" href="<?php echo e(route('home')); ?>">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item px-lg-4">
+                <li class="nav-item <?php echo $__env->yieldContent('nav_about'); ?> px-lg-4">
                     <a class="nav-link text-uppercase text-expanded" href="<?php echo e(route('about')); ?>">About</a>
                 </li>
-                <li class="nav-item px-lg-4">
+                <li class="nav-item <?php echo $__env->yieldContent('nav_products'); ?> px-lg-4">
                     <a class="nav-link text-uppercase text-expanded" href="<?php echo e(route('products')); ?>">Products</a>
                 </li>
-                <li class="nav-item px-lg-4">
+                <li class="nav-item <?php echo $__env->yieldContent('nav_store'); ?> px-lg-4">
                     <a class="nav-link text-uppercase text-expanded" href="<?php echo e(route('store')); ?>">Store</a>
                 </li>
             </ul>

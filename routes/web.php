@@ -15,6 +15,19 @@ Route::get('/', function () {
     return view('frontend.index');
 })->name('home');
 
+Route::get('about', function () {
+    return view('frontend.about');
+})->name('about');
+
+
+Route::get('products', function () {
+    return view('frontend.products');
+})->name('products');
+
+Route::get('store', function () {
+    return view('frontend.store');
+})->name('store');
+
 Route::get('users/{name?}', function ($name = "chase")
 {
     return 'Hello, I am ' .$name;

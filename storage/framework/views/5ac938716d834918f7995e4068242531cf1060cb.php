@@ -1,4 +1,6 @@
-<?php $__env->startSection('title', 'Home'); ?>
+<?php $__env->startSection('title', 'Store'); ?>
+
+<?php $__env->startSection('nav_store', 'active'); ?>
 
 <?php $__env->startSection('content'); ?>
 
@@ -82,6 +84,5 @@
         </div>
       </div>
     </section>
-
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('frontend.layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/long/Long_message_board/resources/views/frontend/store.blade.php ENDPATH**/ ?>
